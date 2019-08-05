@@ -1,0 +1,290 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.bg-image-wrapper{
+	position: relative; 
+}
+.mp3-top-background{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	height: 40vh;
+	/* height: 336px; */
+	/* Add the blur effect */
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	z-index: 1;
+}
+
+.mp3-search-icon-wrapper{
+	color: white;
+	font-size: 20px;
+	z-index: 2;
+}
+.profile-wrapper{
+	color: white;
+	z-index: 2;
+}
+.profile-wrapper .profile-image-wrapper{
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	background-color: #9D68C1;
+}
+.profile-wrapper p{
+	font-size: 16px;
+}
+.mp3-top-menu-wrapper{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.mp3-track-detail-wrapper{
+	height: 200px;
+	margin-top: -140px;
+	z-index: 2;
+	margin-left: 15px;
+    margin-right: 15px;
+}
+.track-detail-image-wrapper img{
+	-webkit-box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
+}
+.track-detail-info-wrapper{
+	color: white;
+}
+
+.mp3-track-wrapper{
+	background-color: #2A2A2A;
+	height: 48vh;
+	margin-top: -60px;
+	z-index: 1;
+	overflow: auto;
+	overflow: -moz-scrollbars-none;
+	-ms-overflow-style: none;
+}
+.mp3-track-wrapper::-webkit-scrollbar { width: 0 !important }
+.mp3-track-wrapper table{
+	color: white;
+}
+.mp3-track-wrapper table tr:nth-child(even){	
+	/* background-color: rgba(42,42,42,0.90); */
+	background-image: linear-gradient(270deg, #3C3434 0%, #2C2A3F 100%);
+	/* background-image: linear-gradient(270deg, #FFA883 0%, #3927FF 100%); */
+	position: relative;
+	vertical-align: middle;
+}
+.mp3-track-wrapper table tr:nth-child(odd){
+	background-color: #222222;
+}
+
+
+.mp3-player-button-wrapper{
+	position: sticky;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #1D1D1D;
+	height: 12vh;
+	width: 100%;
+	z-index: 2;
+}
+
+.btn-black{
+	background-color: black;
+	color: white;
+}
+.btn-pill{
+	border-radius: 30px;
+	padding: 8px 15px;
+}
+
+.btn-round-gradient{
+	background-image: linear-gradient(to top right, #3927FF, #FFA883);
+	width: 82px;
+	height: 82px;
+	border: 0px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+
+.left-panel-bg{
+	background-color: #222222;
+}
+.table-list-wrapper{
+	overflow: auto;
+	overflow: -moz-scrollbars-none;
+	-ms-overflow-style: none;
+	height: 70vh;
+}
+.table-list-wrapper::-webkit-scrollbar { width: 0 !important }
+.left-panel-bg table{
+	background-color: #222222; 
+	color: #979797;
+	border-color: transparent;
+}
+.left-panel-bg table tr.active{
+	color: white;
+	background-image: linear-gradient(270deg, #3C3434 0%, #2C2A3F 100%);
+}
+.left-panel-bg table th{
+	background-color:  #161616; 
+	font-size: 18px;
+	letter-spacing: 0;
+}
+.left-panel-bg table th,
+.left-panel-bg table td{
+	padding: 20px 10%;
+}
+
+.current-playlist-container{
+	position: relative;
+}
+.current-playlist-wrapper{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	height: 30vh;
+	/* Add the blur effect */
+	filter: brightness( 30% );
+	-webkit-filter: brightness( 30% );
+	z-index: 1;
+}
+.current-playlist-text-wrapper{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	color: white;
+	font-weight: normal;
+}
+
+.btn-function-bg-sm{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+    border: 0;
+}
+.btn-function-bg-md{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	width: 25px;
+	height: 25px;
+	background-color: transparent;
+    border: 0;
+}
+.btn-function-bg-lg{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+    border: 0;
+}
+.random-button{
+	background-image: url( './../images/svg/random.svg' );
+}
+.random-button:hover{
+	background-image: url( './../images/svg/random-hover.svg' );
+}
+.step-backward-button{
+	background-image: url( './../images/svg/step-backward-solid.svg' );
+}
+.step-backward-button:hover{
+	background-image: url( './../images/svg/step-backward-solid-hover.svg' );
+}
+.play-circle-button{
+	background-image: url( './../images/svg/play-circle-regular.svg' );
+}
+.play-circle-button:hover{
+	background-image: url( './../images/svg/play-circle-regular-hover.svg' );
+}
+.step-forward-button{
+	background-image: url( './../images/svg/step-forward-solid.svg' );
+}
+.step-forward-button:hover{
+	background-image: url( './../images/svg/step-forward-solid-hover.svg' );
+}
+.repeat-button{
+	background-image: url( './../images/svg/repeat.svg' );
+}
+.repeat-button:hover{
+	background-image: url( './../images/svg/repeat-hover.svg' );
+}
+.plus-button{
+	background-image: url( './../images/svg/plus-solid.svg' );
+	margin-right: 10px;
+}
+.plus-button:hover{
+	background-image: url( './../images/svg/plus-solid-hover.svg' );
+}
+.minus-button{
+	background-image: url( './../images/svg/minus-solid.svg' );
+}
+.minus-button:hover{
+	background-image: url( './../images/svg/minus-solid-hover.svg' );
+}
+.volume-button{
+	color: #474747;
+	background-color: transparent;
+    border: 0;
+	font-size: 20px;
+}
+.volume-button:hover{
+	color: #6241E6;
+}
+.volume-wrapper .progress{
+	height: 8px;
+	background-color: #282828;
+	width: 80%;
+}
+.volume-wrapper .progress .progress-bar{
+	background-color: #888585;    
+	border-radius: 4.5px;
+}
+
+
+
+.timeline-progress-wrapper .progress{
+	height: 5px;
+	border-radius: 0px;
+}
+.timeline-progress-wrapper .progress .progress-bar{
+	background-color: transparent;
+	background-image: linear-gradient(to right, #3927FF, #FFA883);
+}
+
+.timeline-progress-wrapper .change-timeline{
+	background-color: white;
+	border: 0;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	margin-top: -5px;
+}
+.timeline-progress-wrapper .change-timeline:hover{
+	width: 19px;
+	height: 19px;
+	margin-top: -7px;
+}
+.timeline-progress-wrapper .change-timeline:focus{
+	box-shadow: unset;
+	outline: 0px;
+}
